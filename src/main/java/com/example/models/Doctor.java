@@ -12,7 +12,9 @@ import lombok.*;
 @NoArgsConstructor
 @Getter
 @Setter
+
 public class Doctor {
+    @Getter
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -20,4 +22,5 @@ public class Doctor {
     private String name;
     private String speciality;
     private int age;
+
 }
