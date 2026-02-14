@@ -5,6 +5,9 @@ import com.example.repository.PatientRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -28,9 +31,10 @@ public class PatientService {
         return null;
     }
 
-    public List<Patient> getAllPatients(){
+    public Page<Patient> getAllPatients(int page, int size){
         try {
-            return repository.findAll();
+            Pageable pageable = PageRequest.of(page,size);
+            return repository.findAll(pageable);
         }catch (Exception e){
             logger.error("Unable to Find Any Patient :: {}",e.getMessage());
         }

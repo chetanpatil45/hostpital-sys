@@ -4,6 +4,7 @@ import com.example.models.Patient;
 import com.example.service.PatientService;
 import org.aspectj.apache.bcel.generic.RET;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,9 +18,10 @@ public class PatientController {
     private PatientService service;
 
     @GetMapping
-    public List<Patient> getAllPatient(){ //fetch records of all patients
+    public Page<Patient> getAllPatient(@RequestParam(defaultValue = "0") int page,
+                                       @RequestParam(defaultValue = "5") int size){ //fetch records of all patients
         System.out.println("-> FETCHING THE PATIENTS");
-        return service.getAllPatients();
+        return service.getAllPatients(page, size);
     }
 
     @GetMapping("/{id}")
