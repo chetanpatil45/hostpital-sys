@@ -41,7 +41,6 @@ public class AppointmentService {
         } catch (Exception e) {
             logger.error("UNABLE TO ADD APPOINTMENT WITH ID {} :: {} ", appointment.getId(), e.getMessage());
         }
-
         return null;
     }
 
