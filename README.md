@@ -12,33 +12,33 @@
 
 2. **Doctor**
 
-    | Method | Endpoint                 | Description                                      |
-    |--------|--------------------------|--------------------------------------------------|
-    | GET    | /api/v1/doctor           | Get list of all doctors                          |
-    | GET    | /api/v1/doctor/:id       | Get doctor details by ID                         |
-    | POST   | /api/v1/doctor           | Add a new doctor                                 |
-    | PUT    | /api/v1/doctor/:id       | Update doctor details by ID                      |
-    | DELETE | /api/v1/doctor/:id       | Delete doctor details by ID                      |
+    | Method | Endpoint                  | Description                                      |
+    |--------|---------------------------|--------------------------------------------------|
+    | GET    | /api/v1/doctor            | Get list of all doctors                          |
+    | GET    | /api/v1/doctor/:id        | Get doctor details by ID                         |
+    | POST   | /api/v1/doctor            | Add a new doctor                                 |
+    | PUT    | /api/v1/doctor/:id        | Update doctor details by ID                      |
+    | DELETE | /api/v1/doctor/:id        | Delete doctor details by ID                      |
 
 3. **Bill**
 
-    | Method | Endpoint               | Description                                   |
-    |--------|------------------------|-----------------------------------------------|
-    | GET    | /api/v1/bill           | Get list of all bills                         |
-    | GET    | /api/v1/bill/:id       | Get bill details by ID                        |
-    | POST   | /api/v1/bill           | Add a new bill                                |
-    | PUT    | /api/v1/bill/:id       | Update bill details by ID                     |
-    | DELETE | /api/v1/bill/:id       | Delete bill details by ID                     |
+    | Method | Endpoint                  | Description                                      |
+    |--------|---------------------------|--------------------------------------------------|
+    | GET    | /api/v1/bill              | Get list of all bills                            |
+    | GET    | /api/v1/bill/:id          | Get bill details by ID                           |
+    | POST   | /api/v1/bill              | Add a new bill                                   |
+    | PUT    | /api/v1/bill/:id          | Update bill details by ID                        |
+    | DELETE | /api/v1/bill/:id          | Delete bill details by ID                        |
 
 4. **Appointments**
 
-    | Method | Endpoint             | Description                                    |
-    |--------|----------------------|------------------------------------------------|
-    | GET    | /api/v1/bill         | To get record/list of all Appointment          |
-    | GET    | /api/v1/bill/:id     | To get record of Appointment with ID           |
-    | POST   | /api/v1/bill         | To add Appointment details in application      |
-    | PUT    | /api/v1/bill/:id     | To update details of Appointment with ID       |
-    | DELETE | /api/v1/bill/:id     | To delete details of Appointment with ID       |
+    | Method | Endpoint                  | Description                                      |
+    |--------|---------------------------|--------------------------------------------------|
+    | GET    | /api/v1/bill              | To get record/list of all Appointment            |
+    | GET    | /api/v1/bill/:id          | To get record of Appointment with ID             |
+    | POST   | /api/v1/bill              | To add Appointment details in application        |
+    | PUT    | /api/v1/bill/:id          | To update details of Appointment with ID         |
+    | DELETE | /api/v1/bill/:id          | To delete details of Appointment with ID         |
 
 
 ## Postman Collection 
