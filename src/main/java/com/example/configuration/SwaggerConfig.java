@@ -21,8 +21,8 @@ public class SwaggerConfig {
                 )
                 .servers(
                         new ArrayList<>(Arrays.asList(
-                                new Server().url("localhost:8081").description("local"),
-                                new Server().url("localhost:8082").description("production")
+                                new Server().url("http://localhost:8081").description("local"),
+                                new Server().url("http://localhost:8082").description("production")
                                 ))
                 );
     }
