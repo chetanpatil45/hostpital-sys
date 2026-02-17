@@ -2,6 +2,7 @@ package com.example.controllers;
 
 import com.example.models.Bill;
 import com.example.service.BillService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/bill")
+@Tag(name = "Bill APIs", description = "Bill related APIs - CREATE, READ, UPDATE & DELETE")
 public class BillController {
 
     @Autowired

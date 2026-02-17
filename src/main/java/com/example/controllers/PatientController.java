@@ -2,6 +2,7 @@ package com.example.controllers;
 
 import com.example.models.Patient;
 import com.example.service.PatientService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.aspectj.apache.bcel.generic.RET;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -12,6 +13,7 @@ import java.util.concurrent.RecursiveTask;
 
 @RestController
 @RequestMapping("/api/v1/patient")
+@Tag(name = "Patient APIs", description = "Patient related APIs - CREATE, READ, UPDATE & DELETE")
 public class PatientController {
 
     @Autowired
