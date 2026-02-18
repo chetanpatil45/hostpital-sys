@@ -1,7 +1,9 @@
 # Swagger API -
 
 - Swagger API is api documentation tool which is used in spring boot.
-- It uses `Springdoc OpenAPI` it is designed to generate API documentation from spring boot application.
+- It uses `Springfox` or `Springdoc OpenAPI`
+- Springfox is older and has less performance, Spring doc has higher performance and it supports OpenAPI 3 specifications.
+- They are designed to generate API documentation from spring boot application.
 - `springdoc-openapi-ui` starter to use Swagger UI.
 - Swagger uses `/v3/api-docs` endpoint, That provides the **JSON** representation of API documentation.
 - default path - `localhost:8080/swagger-ui/index.html`, we can change it application.properties file.
