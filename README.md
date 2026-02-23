@@ -1,42 +1,84 @@
-## API Endpoint's 
 
-1. **Patient** 
 
-    | Method | Endpoint                  | Description                                      |
-    |--------|---------------------------|--------------------------------------------------|
-    | GET    | /api/v1/patient           | Get list of all patients                         |
-    | GET    | /api/v1/patient/:id       | Get patient details by ID                        |
-    | POST   | /api/v1/patient           | Add a new patient                                |
-    | PUT    | /api/v1/patient/:id       | Update patient details by ID                     |
-    | DELETE | /api/v1/patient/:id       | Delete patient details by ID                     |
+## ✅ Corrected API Endpoints
 
-2. **Doctor**
+### 1️⃣ Patient
 
-    | Method | Endpoint                  | Description                                      |
-    |--------|---------------------------|--------------------------------------------------|
-    | GET    | /api/v1/doctor            | Get list of all doctors                          |
-    | GET    | /api/v1/doctor/:id        | Get doctor details by ID                         |
-    | POST   | /api/v1/doctor            | Add a new doctor                                 |
-    | PUT    | /api/v1/doctor/:id        | Update doctor details by ID                      |
-    | DELETE | /api/v1/doctor/:id        | Delete doctor details by ID                      |
+| Method | Endpoint              | Description                  |
+| ------ | --------------------- | ---------------------------- |
+| GET    | `/api/v1/patient`     | Get list of all patients     |
+| GET    | `/api/v1/patient/:id` | Get patient details by ID    |
+| POST   | `/api/v1/patient`     | Add a new patient            |
+| PUT    | `/api/v1/patient/:id` | Update patient details by ID |
+| DELETE | `/api/v1/patient/:id` | Delete patient details by ID |
 
-3. **Bill**
+---
 
-    | Method | Endpoint                  | Description                                      |
-    |--------|---------------------------|--------------------------------------------------|
-    | GET    | /api/v1/bill              | Get list of all bills                            |
-    | GET    | /api/v1/bill/:id          | Get bill details by ID                           |
-    | POST   | /api/v1/bill              | Add a new bill                                   |
-    | PUT    | /api/v1/bill/:id          | Update bill details by ID                        |
-    | DELETE | /api/v1/bill/:id          | Delete bill details by ID                        |
+### 2️⃣ Doctor
 
-4. **Appointments**
+| Method | Endpoint             | Description                 |
+| ------ | -------------------- | --------------------------- |
+| GET    | `/api/v1/doctor`     | Get list of all doctors     |
+| GET    | `/api/v1/doctor/:id` | Get doctor details by ID    |
+| POST   | `/api/v1/doctor`     | Add a new doctor            |
+| PUT    | `/api/v1/doctor/:id` | Update doctor details by ID |
+| DELETE | `/api/v1/doctor/:id` | Delete doctor details by ID |
 
-    | Method | Endpoint                  | Description                                      |
-    |--------|---------------------------|--------------------------------------------------|
-    | GET    | /api/v1/bill              | To get record/list of all Appointment            |
-    | GET    | /api/v1/bill/:id          | To get record of Appointment with ID             |
-    | POST   | /api/v1/bill              | To add Appointment details in application        |
-    | PUT    | /api/v1/bill/:id          | To update details of Appointment with ID         |
-    | DELETE | /api/v1/bill/:id          | To delete details of Appointment with ID         |
+---
 
+### 3️⃣ Bill
+
+| Method | Endpoint           | Description               |
+| ------ | ------------------ | ------------------------- |
+| GET    | `/api/v1/bill`     | Get list of all bills     |
+| GET    | `/api/v1/bill/:id` | Get bill details by ID    |
+| POST   | `/api/v1/bill`     | Add a new bill            |
+| PUT    | `/api/v1/bill/:id` | Update bill details by ID |
+| DELETE | `/api/v1/bill/:id` | Delete bill details by ID |
+
+---
+
+### 4️⃣ Appointment (✅ Fixed)
+
+| Method | Endpoint                  | Description                      |
+| ------ | ------------------------- | -------------------------------- |
+| GET    | `/api/v1/appointment`     | Get list of all appointments     |
+| GET    | `/api/v1/appointment/:id` | Get appointment details by ID    |
+| POST   | `/api/v1/appointment`     | Add a new appointment            |
+| PUT    | `/api/v1/appointment/:id` | Update appointment details by ID |
+| DELETE | `/api/v1/appointment/:id` | Delete appointment details by ID |
+
+---
+
+## 💡 Optional Improvements (Best Practice)
+
+If you're building a production-grade REST API, consider:
+
+* Use plural nouns for consistency:
+
+  * `/api/v1/patients`
+  * `/api/v1/doctors`
+  * `/api/v1/bills`
+  * `/api/v1/appointments`
+
+* Add relationship endpoints:
+
+  * `GET /api/v1/patients/:id/appointments`
+  * `GET /api/v1/doctors/:id/appointments`
+  * `GET /api/v1/patients/:id/bills`
+
+* Add filtering support:
+
+  * `/api/v1/appointments?doctorId=5`
+  * `/api/v1/bills?patientId=10`
+
+---
+
+If you'd like, I can also:
+
+* Design a proper **database schema**
+* Create **ER diagram structure**
+* Generate **Node.js / Spring Boot / Django controller code**
+* Provide **Swagger/OpenAPI documentation**
+
+Just tell me your tech stack 🚀
