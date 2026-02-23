@@ -38,7 +38,7 @@
 
 ---
 
-### 4️⃣ Appointment (✅ Fixed)
+### 4️⃣ Appointment
 
 | Method | Endpoint                  | Description                      |
 | ------ | ------------------------- | -------------------------------- |
