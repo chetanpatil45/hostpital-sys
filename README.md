@@ -94,31 +94,26 @@ This separation ensures:
 ## 🛠️ Technologies & Tools Used
 
 ### 🔹 Spring Boot
-
 * Rapid application development
 * Embedded server support
 * RESTful API development
 * Dependency injection and auto-configuration
 
 ### 🔹 Log4j
-
 * Implemented for application logging
 * Tracks system events, errors, and debugging information
 * Supports multiple log levels (INFO, DEBUG, ERROR, etc.)
 * Helps in monitoring and troubleshooting production issues
 
 ### 🔹 Swagger (OpenAPI)
-
 * Integrated for API documentation
 * Provides interactive API testing interface
 * Auto-generates API documentation from annotations
 * Improves collaboration between frontend and backend teams
 
 ### 🔹 Lombok
-
 * Reduces boilerplate code
 * Automatically generates:
-
   * Getters & Setters
   * Constructors
   * toString()
@@ -128,7 +123,6 @@ This separation ensures:
 ---
 
 ## 🔐 Additional Capabilities
-
 * Exception handling using `@ControllerAdvice`
 * Proper HTTP status code responses
 * Input validation using `@Valid`
@@ -138,7 +132,6 @@ This separation ensures:
 ---
 
 ## 🎯 Benefits of the System
-
 * Centralized hospital data management
 * Improved operational efficiency
 * Reduced manual paperwork
